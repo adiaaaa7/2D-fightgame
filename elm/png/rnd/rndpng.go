@@ -34,47 +34,6 @@ func MpRand(sel int) image.Image {
 	return img
 }
 
-func PcOpRand(sel int) image.Image {
-	var img image.Image
-	var err error
-	switch sel {
-	case 1:
-		img, _, err = image.Decode(bytes.NewReader(pc.Pt1_png))
-	case 2:
-		img, _, err = image.Decode(bytes.NewReader(pc.Pt2_png))
-	case 3:
-		img, _, err = image.Decode(bytes.NewReader(pc.Pt3_png))
-	case 4:
-		img, _, err = image.Decode(bytes.NewReader(pc.Pt4_png))
-	case 5:
-		img, _, err = image.Decode(bytes.NewReader(pc.Pt5_png))
-	case 6:
-		img, _, err = image.Decode(bytes.NewReader(pc.Pt6_png))
-	case 7:
-		img, _, err = image.Decode(bytes.NewReader(pc.Pt7_png))
-	case 8:
-		img, _, err = image.Decode(bytes.NewReader(pc.Pt8_png))
-	case 9:
-		img, _, err = image.Decode(bytes.NewReader(pc.Pt9_png))
-	case 10:
-		img, _, err = image.Decode(bytes.NewReader(pc.Pt10_png))
-	case 11:
-		img, _, err = image.Decode(bytes.NewReader(pc.Pt11_png))
-	case 12:
-		img, _, err = image.Decode(bytes.NewReader(pc.Pt12_png))
-	case 13:
-		img, _, err = image.Decode(bytes.NewReader(pc.Pt13_png))
-	case 14:
-		img, _, err = image.Decode(bytes.NewReader(pc.Pt14_png))
-	case 15:
-		img, _, err = image.Decode(bytes.NewReader(pc.Pt15_png))
-	case 16:
-		img, _, err = image.Decode(bytes.NewReader(pc.Pt16_png))
-	}
-	errLog(err)
-	return img
-}
-
 func PcStuRand(sel int) image.Image {
 	var img image.Image
 	var err error
